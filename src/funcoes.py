@@ -238,7 +238,7 @@ def calc_retencao_rfv(df):
     perfil = clientes_mes["Profile"]
     clientes_mes = clientes_mes.drop(columns="Profile")
 
-    # ⚠️ Mantém somente colunas numéricas
+    # Mantém somente colunas numéricas
     clientes_mes = clientes_mes.select_dtypes(include=["number"])
 
     retencao_rfv = clientes_mes.groupby(perfil).mean().T
