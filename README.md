@@ -71,38 +71,36 @@ O dashboard foi publicado em:
 
 ## 📁 Organização
 
-📦 UniGift/
-├── app.py               # App Streamlit com navegação e análises integradas
-├── app.bat              # Atalho para executar o app.py sem abrir o terminal
-├── tests.bat            # Atalho para rodar os testes com pytest + cobertura
-├── requirements.txt     # Dependências necessárias para execução e deploy
-├── src/                 # Módulo de visualizações, formatação e pré-processamento
-│   ├── plots.py
-│   ├── formatador.py
-│   └── preprocessamento.py
-├── data/
-│   ├── raw/             # Base de dados original (OnlineRetail.csv)
-│   │   └── OnlineRetail.csv
-│   ├── clean/           # Base tratada (df.csv) com dados limpos
-│   │   └── df.csv
-│   └── dashboards/      # Arquivos segmentados para visualizações no app
-│       ├── transacoes.csv
-│       ├── media_preco.csv
-│       ├── top_vendas_pais.csv
-│       ├── margem_lucro.csv
-│       ├── preferencias.csv
-│       ├── rfv.csv
-│       ├── proporcao_rfv.csv
-│       ├── faturamento_rfv.csv
-│       ├── migracoes_rfv.csv
-│       └── retencao_rfv.csv
-├── tests/               # Testes automatizados com `pytest`
-├── htmlcov/             # Relatório de cobertura de testes (gerado com `pytest-cov`)
-├── UniGift.ipynb        # Notebook de limpeza, exploração e exportação de dados
-├── README.md            # Documentação principal do projeto
-└── LICENSE              # Termos de uso e licença
-
-
+📦 UniGift/  
+├── app.py               # App Streamlit com navegação e análises integradas  
+├── app.bat              # Atalho para executar o app.py sem abrir o terminal  
+├── tests.bat            # Atalho para rodar os testes com pytest + cobertura  
+├── requirements.txt     # Dependências necessárias para execução e deploy  
+├── src/                 # Módulo de visualizações, formatação e pré-processamento  
+│   ├── plots.py  
+│   ├── formatador.py  
+│   └── preprocessamento.py  
+├── data/  
+│   ├── raw/             # Base de dados original (OnlineRetail.csv)  
+│   │   └── OnlineRetail.csv  
+│   ├── clean/           # Base tratada (df.csv) com dados limpos  
+│   │   └── df.csv  
+│   └── dashboards/      # Arquivos segmentados para visualizações no app  
+│       ├── transacoes.csv  
+│       ├── media_preco.csv  
+│       ├── top_vendas_pais.csv  
+│       ├── margem_lucro.csv  
+│       ├── preferencias.csv  
+│       ├── rfv.csv  
+│       ├── proporcao_rfv.csv  
+│       ├── faturamento_rfv.csv  
+│       ├── migracoes_rfv.csv  
+│       └── retencao_rfv.csv  
+├── tests/               # Testes automatizados com `pytest`  
+├── htmlcov/             # Relatório de cobertura de testes (gerado com `pytest-cov`)  
+├── UniGift.ipynb        # Notebook de limpeza, exploração e exportação de dados  
+├── README.md            # Documentação principal do projeto  
+└── LICENSE              # Termos de uso e licença  
 
 ---
 
