@@ -2,7 +2,7 @@
 
 Análise de comportamento de clientes baseada no modelo **RFV (Recência, Frequência e Valor)**, com foco em estratégias de retenção, personalização de campanhas e apoio à gestão de estoque.
 
-Este repositório consolida pipeline de dados, funções analíticas reutilizáveis, testes automatizados e gráficos interativos para compreensão e visualização dos perfis mais relevantes para o negócio.
+Este repositório consolida pipeline de dados, funções analíticas reutilizáveis, testes automatizados e um **dashboard interativo (deploy via Streamlit Community Cloud)** com visualizações e análises interpretativas embutidas — diretamente abaixo de cada gráfico.
 
 ---
 
@@ -33,6 +33,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 - Cálculo dos indicadores de **Recência**, **Frequência** e **Valor**
 - Modelagem RFV via quantis e scores compostos
 - Segmentação visual com gráficos de barras e pizza
+- Análises descritivas integradas no app (abaixo de cada visualização)
 - Testes com `pytest`, incluindo **parametrização de casos de borda**
 - Medição de **cobertura de testes com `pytest-cov`**
 - Modularização com funções reutilizáveis (`src/plots.py`, `format_milhar`)
@@ -46,7 +47,8 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 - `plot_barh()`, `plot_barv()` e `plot_pizza()` com formatação monetária inteligente
 - Sufixos compactos (`k`, `kk`) configuráveis
 - Rótulos com controle de casas decimais e símbolo (`R$`, `£`, `$`, etc.)
-- Suporte a escala logarítmica e agrupamento visual por cor
+- Suporte a escala logarítmica, ordenação flexível e agrupamento visual por cor
+- **Textos analíticos posicionados diretamente após cada gráfico (Streamlit)**
 
 ---
 
@@ -59,17 +61,49 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 ---
 
-## 📁 Organização
+## 🚀 Deploy
 
-```
-📦 UniGift/
-├── src/              # Funções de formatação e visualização
-├── tests/            # Testes automatizados (unitários e parametrizados)
-├── htmlcov/          # Relatório de cobertura (gerado após testes)
-├── UniGift.ipynb     # Notebook de demonstração dos gráficos e resultados
-└── README.md         # Este arquivo
-```
+O dashboard foi publicado em:
+
+🔗 [Streamlit Community Cloud](https://share.streamlit.io/)  
 
 ---
 
-Esse projeto tem foco em **clareza, modularidade e confiabilidade**, oferecendo uma base sólida para aplicar RFV em diversos contextos.
+## 📁 Organização
+
+📦 UniGift/
+├── app.py               # App Streamlit com navegação e análises integradas
+├── app.bat              # Atalho para executar o app.py sem abrir o terminal
+├── tests.bat            # Atalho para rodar os testes com pytest + cobertura
+├── requirements.txt     # Dependências necessárias para execução e deploy
+├── src/                 # Módulo de visualizações, formatação e pré-processamento
+│   ├── plots.py
+│   ├── formatador.py
+│   └── preprocessamento.py
+├── data/
+│   ├── raw/             # Base de dados original (OnlineRetail.csv)
+│   │   └── OnlineRetail.csv
+│   ├── clean/           # Base tratada (df.csv) com dados limpos
+│   │   └── df.csv
+│   └── dashboards/      # Arquivos segmentados para visualizações no app
+│       ├── transacoes.csv
+│       ├── media_preco.csv
+│       ├── top_vendas_pais.csv
+│       ├── margem_lucro.csv
+│       ├── preferencias.csv
+│       ├── rfv.csv
+│       ├── proporcao_rfv.csv
+│       ├── faturamento_rfv.csv
+│       ├── migracoes_rfv.csv
+│       └── retencao_rfv.csv
+├── tests/               # Testes automatizados com `pytest`
+├── htmlcov/             # Relatório de cobertura de testes (gerado com `pytest-cov`)
+├── UniGift.ipynb        # Notebook de limpeza, exploração e exportação de dados
+├── README.md            # Documentação principal do projeto
+└── LICENSE              # Termos de uso e licença
+
+
+
+---
+
+Esse projeto tem foco em **clareza, modularidade e inteligência de negócio**, transformando dados brutos em insights aplicáveis — com tabelas e análises escritas dentro do app para cada visualização RFV.
