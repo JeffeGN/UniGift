@@ -1,4 +1,4 @@
-# UniGift · Segmentação de Clientes via Análise RFV
+# UniGift - Segmentação de Clientes via Análise RFV
 
 Análise de comportamento de clientes baseada no modelo **RFV (Recência, Frequência e Valor)**, com foco em estratégias de retenção, personalização de campanhas e apoio à gestão de estoque.
 
