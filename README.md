@@ -65,7 +65,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 O dashboard foi publicado em:
 
-🔗 [Streamlit Community Cloud]([https://share.streamlit.io/](https://jeffegn-unigift-app-20w8ar.streamlit.app/))  
+🔗 [Streamlit Community Cloud](https://jeffegn-unigift-app-20w8ar.streamlit.app/)  
 
 ---
 
