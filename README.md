@@ -6,7 +6,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 ---
 
-## 🧭 Contexto
+## Contexto
 
 **UniGift** é um e-commerce especializado em presentes personalizados para ocasiões diversas no mercado britânico. Atende tanto o público B2C quanto atacadistas, lidando com desafios como:
 
@@ -17,7 +17,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 ---
 
-## 🔍 Problemas abordados
+## Problemas abordados
 
 - Como **identificar automaticamente os clientes com maior impacto financeiro**?
 - Quais **sinais indicam queda de engajamento** e risco de churn?
@@ -27,7 +27,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 ---
 
-## 🎯 Solução técnica
+## Solução técnica
 
 - Limpeza e padronização dos dados de transações
 - Cálculo dos indicadores de **Recência**, **Frequência** e **Valor**
@@ -42,7 +42,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 ---
 
-## 📊 Exemplos de visualização
+## Exemplos de visualização
 
 - `plot_barh()`, `plot_barv()` e `plot_pizza()` com formatação monetária inteligente
 - Sufixos compactos (`k`, `kk`) configuráveis
@@ -52,7 +52,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 ---
 
-## ✅ Testes e qualidade
+## Testes e qualidade
 
 - Testes automatizados com `pytest`
 - Cobertura monitorada com `pytest-cov`  
@@ -61,7 +61,7 @@ Este repositório consolida pipeline de dados, funções analíticas reutilizáv
 
 ---
 
-## 🚀 Deploy
+## Deploy
 
 O dashboard foi publicado em:
 
@@ -69,7 +69,7 @@ O dashboard foi publicado em:
 
 ---
 
-## 📁 Organização
+## Organização
 
 📦 UniGift/  
 ├── app.py               # App Streamlit com navegação e análises integradas  
